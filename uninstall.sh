@@ -4,8 +4,7 @@ set -e
 
 uninstall() {
   cd ./scripts
-  for script in *.sh
-  do
+  for script in *.sh; do
     unlink "/usr/local/bin/${script%.*}"
   done
 }

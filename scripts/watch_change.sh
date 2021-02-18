@@ -17,10 +17,10 @@ fi
 
 echo "watching: $1"
 INTERVAL=1 # second
-last=$(__check "$1")
+last=$(check "$1")
 while true; do
   sleep $INTERVAL
-  current=$(__check "$1")
+  current=$(check "$1")
   if [ "$last" != "$current" ]; then
     echo 'execute...'
     eval "$2"

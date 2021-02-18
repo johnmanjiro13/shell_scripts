@@ -1,5 +1,5 @@
 # shell_scripts
-collection of shell scripts
+collection of useful shell scripts
 
 # Install
 ```
