@@ -2,8 +2,8 @@
 
 set -e
 
-SCRIPTS_PATH="$HOME"/dev/src/github.com/johnmanjiro13/shell_scripts/scripts; export SCRIPTS_PATH
-SCRIPTS_GITHUB="https://github.com/johnmanjiro13/shell_scripts.git"; export SCRIPTS_GITHUB
+declare -r SCRIPTS_PATH="$HOME"/dev/src/github.com/johnmanjiro13/shell_scripts/scripts
+declare -r SCRIPTS_GITHUB="https://github.com/johnmanjiro13/shell_scripts.git"
 
 download_scripts() {
   if [ ! -d "$SCRIPTS_PATH" ]; then

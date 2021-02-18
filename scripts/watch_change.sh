@@ -1,17 +1,17 @@
 #!/bin/bash
 
-__usage() {
+function usage() {
   cat <<EOS
-  usage: $(basename $0) <target filename> <command>
+Usage: $(basename "$0") <target filename> <command>
 EOS
 }
 
-__check() {
+function check() {
   openssl sha256 -r "$1" | awk '{print $1}'
 }
 
 if [ $# -ne 2 ]; then
-  __usage
+  usage
   exit 1
 fi
 
