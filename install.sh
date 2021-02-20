@@ -12,7 +12,7 @@ download_scripts() {
 }
 
 install() {
-  cd ./scripts
+  cd "$SCRIPTS_PATH"
   for script in *.sh; do
     ln -sf "$SCRIPTS_PATH/$script" "/usr/local/bin/${script%.*}"
   done
