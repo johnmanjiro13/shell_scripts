@@ -4,7 +4,7 @@ set -e
 
 SCRIPTS_PATH="$HOME"/dev/src/github.com/johnmanjiro13/shell_scripts/scripts; readonly SCRIPTS_PATH
 
-uninstall() {
+function uninstall() {
   cd "$SCRIPTS_PATH"
   for script in *.sh; do
     link="/usr/local/bin/${script%.*}"
