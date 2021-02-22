@@ -5,8 +5,8 @@ PROGRAM=$(basename "$0"); readonly PROGRAM
 function usage() {
   cat <<EOS
 Usage: $PROGRAM [OPTION]...
-  -h, --help Display help
-  -u         Generate UUID with uppercase
+  -h, --help  Display help
+  -u, --upper Generate UUID with uppercase
 EOS
 }
 
@@ -17,11 +17,11 @@ fi
 
 for OPT in "$@"; do
   case $OPT in
-  -h |--help)
+  -h | --help)
     usage
     exit 1
     ;;
-  -u)
+  -u | --upper)
     uuidgen | tr -d '\n'
     break
     ;;
