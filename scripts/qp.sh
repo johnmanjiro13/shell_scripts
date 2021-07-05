@@ -4,6 +4,7 @@ PROGRAM=$(basename "$0"); readonly PROGRAM
 
 function usage() {
   cat <<EOS
+Display query parameters.
 Usage: $PROGRAM <url>
 EOS
 }
