@@ -4,6 +4,7 @@ PROGRAM=$(basename "$0"); readonly PROGRAM
 
 function usage() {
   cat <<EOS
+Generate uuid.
 Usage: $PROGRAM [OPTION]...
   -h, --help  Display help
   -u, --upper Generate UUID with uppercase

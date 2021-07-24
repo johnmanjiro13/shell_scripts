@@ -4,6 +4,7 @@ PROGRAM=$(basename "$0"); readonly PROGRAM
 
 function usage() {
   cat <<EOS
+Generate random password.
 Usage: $PROGRAM [OPTION]...
   -h, --help   Display help.
   -l, --length Length of the generated password. Default is 10.

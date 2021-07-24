@@ -2,6 +2,7 @@
 
 function usage() {
   cat <<EOS
+Watch a file and execute a command on changes occur.
 Usage: $(basename "$0") <target filename> <command>
 EOS
 }
